@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauli Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Mauli</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- End Navbar -->
+
+  <!-- Project Detail Section -->
+  <section class="project-detail-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="project-detail-card">
+            <h2 class="project-title" style="text-align: center; font-family: 'Times New Roman';">UI Hijab Distribution</h2>
+
+            <!-- Swiper Gallery -->
+            <div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="image/Login_page.png" alt="Gallery Image 1" class="img-fluid rounded w-10">
+                </div>
+                <br>
+                <div class="swiper-slide">
+                  <img src="image/Main.png" alt="Gallery Image 2" class="img-fluid rounded w-100">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <br>
+            <p class="project-description">
+              This project to help the headscarf convection company in monitoring the distribution of their products to customer.
+            </p>
+
+            <h5>Technologies Used:</h5>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PHP</li>
+              <li>FIGMA</li>
+              <br>
+            <h5>Project Details:</h5>
+            <p>
+              This project was developed as distribution monitoring. It showcases a portfolio project
+              created with FIGMA. The aim was to design a clean, responsive web page to highlight
+              web development skills. Features include animations, hover effects, and a responsive layout.
+            </p>
+            
+            <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark">
+    <div class="container">
+      <p class="text-white fs-7 mb-0 text-center">CopyRight &copy; 2025 Mauli. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="vendors/boostraps/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Init -->
+  <script>
+    const swiper = new Swiper('.project-swiper', {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 1, // Hanya 1 gambar per slide
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500, // Jeda 2.5 detik antar slide
+        disableOnInteraction: false, // Biarkan autoplay terus berjalan meskipun user berinteraksi
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+</body>
+
+</html>
